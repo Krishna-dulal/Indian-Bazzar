@@ -1,5 +1,7 @@
-from django.http import HttpResponse
-
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the bazzar index.")
+        return render(request, 'bazzar/bazzar_index.html')
+
+def hours(request):
+        return render(request,'bazzar/hours.html')

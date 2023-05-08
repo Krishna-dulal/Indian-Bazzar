@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Bazzar Store</title>
+  <meta name="description" content="Welcome to the Indian Bazaar Store, your one-stop-shop for all your Indian food and grocery needs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+  body {
+  font-family: sans-serif;
+  background-image: url('template/banner.jpg');
+}
+
+header {
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-button {
+  margin-left: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav li a:hover {
+  color: #000;
+}
+
+#banner {
+  background-image: url('templates/banner.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#banner h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 5px;
+}
+
+#banner p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#banner button {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#banner button:hover {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+.container {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 50%;
+  height: 100vh;
+  padding: 10px;
+  position: relative;
+}
+
+.container img {
+  position: absolute;
+  padding: 10px;
+  height: 100%;
+  width: 67%;
+  object-fit: cover;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  background-color: #eee;
+  padding: 1rem;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Indian Bazaar Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="bazzar/hours.html">Hours</a></li>
+        <li><a href="https://www.google.com/maps/dir/?api=1&destination=Indian+Bazar,+722+Rio+Rd+W+STE+1,+Charlottesville,+VA+2290">Get Directions</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+  <main>
+    <section id="banner">
+      <h1>Welcome to Indian Bazaar </h1>
+      <p>Your one-stop-shop for all your Indian food and grocery needs.</p>
+      <button>Shop Now</button>
+    </section>
+
+        <div class="container">
+          {% load static %} <img src="{% static "media/Grocery.jpg" %}" alt="Banner Picture.">
+        </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Indian Bazzar Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
